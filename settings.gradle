@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "LineChartXaxisCustom"
 include ':app'
 include ':MPChartLib'
+include ':MPChartExample'

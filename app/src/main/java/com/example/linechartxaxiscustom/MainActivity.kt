@@ -98,6 +98,7 @@ class MainActivity : AppCompatActivity() {
         val heartTask: TimerTask = object : TimerTask() {
             override fun run() {
                 runOnUiThread(object : TimerTask() {
+                    @RequiresApi(Build.VERSION_CODES.O)
                     override fun run() {
                         randomVal = (Math.random() * 10).toFloat() // 앱1 값
                         addEntrySingleData(randomVal, binding.lcChart)
